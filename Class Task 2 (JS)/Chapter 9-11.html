@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Task 2 (JS)</title>
+</head>
+<body>  
+    <h1><u>Class Task 2 JavaScript:-</u></h1>
+    <h2><u>USER INPUT & CONDITIONAL STATEMENT (CHAPTER 9 - 11)!</u></h2><br>
+   <h4><u>Question No : 1 (Done) &nbsp;Answer Show In Alert.</u></h4>
+   <h4><u>Question No : 2 (Done) &nbsp;Answer Show In Alert.</u></h4>
+   <h4><u>Question No : 3 (Done) &nbsp;Answer Show In Alert.</u></h4>
+   <h4><u>Question No : 4 (Done) &nbsp;Answer Show In Alert.</u></h4>
+   <h4><u>Question No : 5 (Done) &nbsp;Answer Show In Alert.</u></h4>
+   <h4><u>Question No : 6 (Done)</u></h4>
+   <h4><u>Question No : 7 (Done) </u></h4>
+   <h4><u>Question No : 8 (Done) </u></h4>
+   <h4><u>Question No : 9 (Done) </u></h4>
+   <h4><u>Question No : 10 (Done) </u></h4>
+   <h4><u>Question No : 11 (Done) </u></h4>
+   <script>
+/* Q1 */
+    var city = prompt("Question No : 1\n\nEnter Your City Name");
+    if(city === "karachi"){
+        alert("Welcome to city of lights!");
+    }
+    else{
+        alert("Sorry User City Is No match This Requiredment!");
+    }
+
+/*  Q2 */
+    var gender = prompt("Question No : 2\n\n Enter Your Gender");
+    var message = "";
+    if(gender === "Male"){
+        message= "Good Morning Sir😊";
+    }
+    else if(gender === "Female"){
+        message="Good Morning Ma’am😊";
+    }
+     alert(message);
+
+/* Q3 */
+var trafficSignal = prompt("Question No : 3\n\nEnter Your Traffic Signal Color");
+if(trafficSignal === "Red"){
+    alert("Must Stop");
+}
+else if(trafficSignal === "Yellow"){
+    alert("Ready to move");
+}
+else if(trafficSignal === "Green"){
+    alert("Move now");
+}
+else{
+    alert("There Is No Signal Sign!");
+}
+
+/* Q4 */
+var remainingFuel = parseFloat(prompt("Question No : 4\n\nEnter The Remaining Fuel in Liters."));
+if(remainingFuel < 0.25){
+    alert("Please refill the fuel in your car.");
+}
+else{
+   alert("You have enough fuel in your car");
+}
+
+/* Q5 */
+var a = 4;
+if (++a === 5){
+alert("Question No : 5\n\ngiven condition for variable a is true");
+}
+var b = 82;
+if (b++ === 83){
+alert("given condition for variable b is true");
+}
+var c = 12;
+if (c++ === 13){
+alert("condition 1 is true");
+}
+if (c === 13){
+alert("condition 2 is true");
+}
+if (++c < 14){
+alert("condition 3 is true");
+}
+if(c === 14){
+alert("condition 4 is true");
+}
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+alert("The cost equals");
+}
+if (true){
+alert("True");
+}
+if (false){
+alert("False");
+}
+if("car" < "cat"){
+alert("car is smaller than cat");
+}
+
+/* Q6 */
+ var English = parseFloat(prompt("Enter Your English Marks."));
+ var Urdu = parseFloat(prompt("Enter Your Urdu Marks."));
+ var Math = parseFloat(prompt("Enter Your Math Marks."));
+ var totalMarks = 300;
+ var obtainedMarks = English + Math + Urdu;
+ var percentage = (obtainedMarks / totalMarks)*100;
+
+ let Grade;
+if(percentage >= 80){
+Grade ="A-One";
+}
+else if(percentage >= 70){
+   Grade ="A";
+}
+else if(percentage >= 60){
+   Grade = "B";
+}
+else
+{
+   Grade = "Fail";
+}
+let remarks;
+if(Grade === "A-One"){
+   remarks = "Excellent";
+}
+else if(Grade === "A"){
+   remarks = "Good";
+}
+else if(Grade === "B"){
+   remarks = "You Need To Improve";
+}
+else{
+   remarks = "Fail";
+}
+document.writeln(`<h1>Mark Sheet</h1><br>`);
+document.writeln(`Total Marks :  ${totalMarks}<br>`);
+document.writeln(` Marks Obtained :  ${obtainedMarks}<br>`);
+document.writeln(`Percentage :  ${percentage.toFixed(2)}%<br>`);
+document.writeln(`Grades :  ${Grade}<br>`);
+document.writeln(`Remarks :  ${remarks}<br>`);
+
+/* Q7 */
+var  secretNumber = Math.floor(Math.random() * 10) + 1;
+var  userGuess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+
+if (userGuess === secretNumber) {
+  alert("Bingo! Correct answer");
+} else if (Math.abs(userGuess - secretNumber) === 1) {
+  alert("Close enough to the correct answer");
+} else {
+  alert("Sorry, that's not the correct answer. The secret number was " + secretNumber);
+}
+
+/* Q8 */
+var divisibleNumber = parseInt(prompt("Enter a Number"));
+if( divisibleNumber % 3=== 0){
+   alert(`${divisibleNumber} is divisible by 3.`);
+}
+else{
+   alert(`${number} is not divisible by 3.`);
+}
+
+
+/* Q9 */
+var number = parseInt(prompt("Enter a Number!"))
+if(number % 2 === 0){
+   alert (`${number} is an even number`);
+}
+else{
+   alert (`${number} is an odd number`);
+}
+
+/* Q10 */
+var temperature = parseFloat(prompt("Enter the temperature in Celsius:"));
+
+if (temperature > 40) {
+  alert("It is too hot outside.");
+} else if (temperature > 30) {
+  alert("The Weather today is Normal.");
+} else if (temperature > 20) {
+  alert("Today’s Weather is cool.");
+} else if (temperature > 10) {
+  alert("OMG! Today’s weather is so Cool.");
+} else {
+  alert("It's freezing cold!");
+}
+
+
+/* Q11 */
+var firstNumber = parseInt(prompt("Enter your First Number:"));
+var operator = prompt("Enter the operation (+, -, *, /, %):");
+var secondNumber = parseInt(prompt("Enter your Second Number:"));
+let result;
+
+if (operator === "+") {
+  result = firstNumber + secondNumber;
+} else if (operator === "-") {
+  result = firstNumber - secondNumber;
+} else if (operator === "/") {
+  if (secondNumber !== 0) {
+    result = firstNumber / secondNumber;
+  } else {
+    result = "Division by zero is not allowed";
+  }
+} else if (operator === "*") {
+  result = firstNumber * secondNumber;
+} else if (operator === "%") {
+  if (secondNumber !== 0) {
+    result = firstNumber % secondNumber;
+  } else {
+    result = "Modulo by zero is not allowed";
+  }
+} else {
+  result = 'Invalid Operator';
+}
+alert(result);
+   </script>
+</body>
+</html>

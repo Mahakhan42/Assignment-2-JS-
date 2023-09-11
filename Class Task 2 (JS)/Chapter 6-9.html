@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Task 2 (JS)</title>
+</head>
+<body>
+    <h1><u>Class Task 2 JavaScript:-</u></h1>
+    <h2><u>MATH EXPRESSIONS (CHAPTER 6 - 9)!</u></h2><br>
+    <script>
+// Q1
+document.write("Question No: 1<br><br>");
+document.writeln("Result:<br>");
+var number = 10;
+document.writeln("The value of a is: "+number);
+document.write("<br>.................................<br><br>");
+++number;
+document.write("The value of  ++a  is : "+number);
+document.write("<br>Now the value of a is: "+number+'<br><br>');
+document.writeln("The value of a++  is: "+number);
+number++;
+document.writeln("<br>Now the value of a is: "+number+'<br><br>');
+--number;
+document.writeln("The value of --a is: "+number);
+document.writeln("<br>Now the value of --a is: "+number+'<br><br>');
+document.writeln("The value of a-- is: "+number);
+--number;
+document.write("<br>Now the value of a is: "+number+'<br><br>');
+
+// Q2
+document.writeln("Question No: 2<br><br>");
+var a = 2;
+b = 1;
+var result = --a - --b + ++b + b--;
+document.writeln("a is :"+a+'<br>');
+document.writeln("b is :"+b+'<br>');
+document.writeln("result is :"+result+'<br><br>');
+
+// Q3
+document.writeln("Question No: 3<br><br>");
+var userName = prompt("Enter Your Name");
+
+if(userName !== null){
+document.write('Assalam o Alikum!');
+}
+
+// Q4
+document.writeln("<br><br>Question No: 4<br><br>");
+var inputTableNumber = prompt("Enter a Number for Multiplication Table!");
+var number = parseInt(inputTableNumber)||5; //by default 5 table print
+document.writeln("Multiplication Table For " +number+'<br><br>');
+document.write("<table border= '1'>");
+for(var i = 1;i <=10 ; i++){
+    document.writeln("<tr><td> " + number + " "  +  "x" + " "+  i + "=" + " " +(number *i)+"</td><tr>");
+}
+document.write("</table>");
+
+
+// Q5
+document.writeln("<br><br>Question No: 5<br><br>");
+var Subject1 = parseFloat(prompt("Enter the Marks for the First Subject"));
+var Subject2 = parseFloat(prompt("Enter the Marks for the Second Subject"));
+var Subject3 = parseFloat(prompt("Enter the Marks for the Third Subject"));
+var TotalMarks = 300;
+
+document.writeln("Total Marks : " + TotalMarks + '</br></br>');
+var ObtainedMarks = Subject1 + Subject2 + Subject3;
+document.writeln("Obtained Marks: " + ObtainedMarks + '</br></br>');
+var totalPercentage = (ObtainedMarks / TotalMarks) * 100;
+document.writeln("Percentage: " + totalPercentage.toFixed(2) + '%</br></br>');
+
+
+var grade;
+if (totalPercentage >= 80) {
+    grade = "A+";
+} else if (totalPercentage >= 70) {
+    grade = "A";
+} else if (totalPercentage >= 60) {
+    grade = "B";
+} else if (totalPercentage >= 50) {
+    grade = "C";
+} else {
+    grade = "Fail";
+}
+
+document.writeln("Grade: " + grade);
+
+ </script>
+</body>
+</html>
